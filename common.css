@@ -119,6 +119,11 @@ ul {
   background-color: #F8F8F8;
 }
 
+.form-textarea {
+  height: 100px;
+  resize: none;
+}
+
 .input-sub-wrap .form-label {
   margin-left: 4px;
 }
@@ -205,6 +210,28 @@ ul {
   padding: 2px 8px;
   border-radius: 10px;
 }
+
+/* list */
+.private-info-list {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+.private-info-list li {
+  margin-bottom: 8px;
+}
+
+/* 개인 정보 수집 */
+.private-info-txt {
+  line-height: 1.4;
+  font-size: 17px;
+  background-color: #D9EAFD;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+/* bg */
 
 .bg-skyblue {
   background-color: #D9EAFD;
