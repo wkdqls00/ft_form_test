@@ -112,6 +112,7 @@ ul {
   border-radius: 6px;
   border: 1px solid #8E8E8E;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
 .form-input:focus {
@@ -152,13 +153,11 @@ ul {
 .label-caption {
   margin-top: 4px;
   color: #8E8E8E;
+  line-height: 1.1;
+  letter-spacing: normal;
 }
 
 /* select */
-.form-select {
-  width: 324px;
-}
-
 .input-sub-wrap .form-select {
   margin-bottom: 20px;
   margin-left: 16px;
@@ -246,3 +245,93 @@ ul {
   justify-content: end;
   margin-top: 16px;
 }
+
+/* Mobile - Landscape */
+@media all and (min-width:320px) and (max-width: 768px) {
+  .sub-title-area {
+    margin-bottom: 26px;
+  }
+  .form-main {
+    padding: 30px;
+  }
+  .form-area {
+    padding: 16px;
+    width: 85%;
+  }
+  .form-contents-wrap {
+    padding-inline: 14px;
+    padding-block: 20px;
+  }
+  .form-label {
+    font-size: 14px;
+  }
+  .sub-title {
+    font-size: 17px;
+  }
+  .input-wrap {
+    flex-flow: wrap;
+    flex-direction: column;
+  }
+  .label-caption {
+    font-size: 12px;
+  }
+  .title-txt {
+    font-size: 24px;
+  }
+  .title-info {
+    font-size: 10px;
+  }
+  .form-input {
+    padding: 6px;
+    font-size: 10px;
+    width: 100%;
+  }
+  .form-radio {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .input-area {
+    padding: 0;
+  }
+  input[type="radio" i] {
+    width: 10px;
+    margin: 0;
+    margin-right: 6px;
+  }
+  input[type="checkbox" i] {
+    margin: 0;
+    margin-right: 4px;
+    width: 10px;
+  }
+  .form-checkbox-label {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .checkbox-pin {
+    padding: 6px 8px;
+  }
+  .private-info-txt {
+    font-size: 12px;
+  }
+  .private-info-list {
+    font-size: 12px;
+  }
+  .submit-info {
+    font-size: 14px;
+  }
+  .submit-btn {
+    padding: 11px 20px;
+    font-size: 14px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) {}
+
+/* Desktop */
+@media (min-width: 992px) {}
+
+/* Desktop (Large) */
+@media (min-width: 1200px) {}
