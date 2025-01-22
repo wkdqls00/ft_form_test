@@ -117,7 +117,6 @@ ul {
 
 .form-input:focus {
   outline: none;
-  background-color: #F8F8F8;
 }
 
 .form-textarea {
