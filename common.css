@@ -232,11 +232,17 @@ ul {
 }
 
 /* bg */
-
 .bg-skyblue {
   background-color: #D9EAFD;
 }
 
 .bg-orange {
   background-color: #FFE9D3;
+}
+
+/* submit */
+.submit-info {
+  display: flex;
+  justify-content: end;
+  margin-top: 16px;
 }
