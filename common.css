@@ -299,7 +299,7 @@ ul {
     margin-bottom: 26px;
   }
   .form-main {
-    padding: 20px;
+    padding: 0;
   }
   .form-area {
     padding: 16px;
@@ -337,7 +337,7 @@ ul {
     width: 100%;
   }
   .form-radio {
-    font-size: 10px;
+    font-size: 11px;
     display: flex;
     align-items: center;
   }
@@ -359,7 +359,7 @@ ul {
     width: 10px;
   }
   .form-checkbox-label {
-    font-size: 9px;
+    font-size: 11px;
     display: flex;
     align-items: center;
     flex-flow: wrap;
@@ -381,7 +381,7 @@ ul {
     font-size: 12px;
   }
   .checkbox-info {
-    font-size: 8px;
+    font-size: 9px;
     margin-left: 4px;
   }
   .arrow-right {
