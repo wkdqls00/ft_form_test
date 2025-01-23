@@ -162,7 +162,7 @@ ul {
 .label-caption {
   margin-top: 4px;
   color: #8E8E8E;
-  line-height: 1.1;
+  line-height: 1.2;
   letter-spacing: normal;
 }
 
@@ -314,7 +314,7 @@ ul {
     padding-block: 20px;
   }
   .form-label {
-    font-size: 13px;
+    font-size: 14px;
   }
   .sub-title {
     font-size: 15px;
@@ -327,7 +327,7 @@ ul {
     flex-direction: column;
   }
   .label-caption {
-    font-size: 12px;
+    font-size: 13px;
   }
   .title-txt {
     font-size: 20px;
@@ -411,5 +411,10 @@ ul {
   }
   .label-caption span:last-child {
     display: unset;
+  }
+  #past_overseas_country {
+    margin-left: 14px;
+    width: 80%;
+    margin-bottom: 12px;
   }
 }
