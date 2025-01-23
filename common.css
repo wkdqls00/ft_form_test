@@ -166,6 +166,10 @@ ul {
   letter-spacing: normal;
 }
 
+.label-caption span:last-child {
+  display: block;
+}
+
 /* select */
 .input-sub-wrap .form-select {
   margin-bottom: 20px;
@@ -310,7 +314,7 @@ ul {
     padding-block: 20px;
   }
   .form-label {
-    font-size: 12px;
+    font-size: 13px;
   }
   .sub-title {
     font-size: 15px;
@@ -323,13 +327,13 @@ ul {
     flex-direction: column;
   }
   .label-caption {
-    font-size: 10px;
+    font-size: 12px;
   }
   .title-txt {
-    font-size: 18px;
+    font-size: 20px;
   }
   .title-info {
-    font-size: 10px;
+    font-size: 12px;
   }
   .form-input {
     padding: 6px;
@@ -359,13 +363,13 @@ ul {
     width: 10px;
   }
   .form-checkbox-label {
-    font-size: 11px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     flex-flow: wrap;
   }
   .checkbox-pin {
-    padding: 6px 8px;
+    padding: 6px 6px;
   }
   .private-info-txt {
     font-size: 10px;
@@ -381,7 +385,7 @@ ul {
     font-size: 12px;
   }
   .checkbox-info {
-    font-size: 10px;
+    font-size: 12px;
     margin-left: 4px;
   }
   .arrow-right {
@@ -404,5 +408,8 @@ ul {
   }
   .checkbox-item:last-child {
     margin-left: 4px;
+  }
+  .label-caption span:last-child {
+    display: unset;
   }
 }
