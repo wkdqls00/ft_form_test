@@ -306,7 +306,7 @@ ul {
     padding: 0;
   }
   .form-area {
-    padding: 16px;
+    padding: 12px;
     width: 95%;
   }
   .form-contents-wrap {
@@ -314,13 +314,13 @@ ul {
     padding-block: 20px;
   }
   .form-label {
-    font-size: 14px;
-  }
-  .sub-title {
     font-size: 15px;
   }
+  .sub-title {
+    font-size: 18px;
+  }
   .q-count {
-    font-size: 10px;
+    font-size: 13px;
   }
   .input-wrap {
     flex-flow: wrap;
@@ -330,18 +330,18 @@ ul {
     font-size: 13px;
   }
   .title-txt {
-    font-size: 20px;
+    font-size: 23px;
   }
   .title-info {
     font-size: 12px;
   }
   .form-input {
     padding: 6px;
-    font-size: 10px;
+    font-size: 13px;
     width: 100%;
   }
   .form-radio {
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     align-items: center;
   }
@@ -363,7 +363,7 @@ ul {
     width: 10px;
   }
   .form-checkbox-label {
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     align-items: center;
     flex-flow: wrap;
@@ -385,7 +385,7 @@ ul {
     font-size: 12px;
   }
   .checkbox-info {
-    font-size: 12px;
+    font-size: 13px;
     margin-left: 4px;
   }
   .arrow-right {
@@ -402,9 +402,9 @@ ul {
     margin-top: 8px;
   }
   .logo {
-    width: 75px;
-    height: 18px;
-    background-size: 75px;
+    width: 100px;
+    height: 22px;
+    background-size: 100px;
   }
   .checkbox-item:last-child {
     margin-left: 4px;
