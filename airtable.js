@@ -36,6 +36,9 @@ document.getElementById('ft-form').addEventListener('submit', function(event) {
   const gameDeviceMethods = Array.from(
     document.querySelectorAll('input[name="game_device"]:checked') // 체크된 항목만 선택
   ).map(checkbox => checkbox.nextElementSibling.textContent); // 체크박스의 레이블 값 가져오기
+  const tendencyMethods = Array.from(
+    document.querySelectorAll('input[name="tendency"]:checked') // 체크된 항목만 선택
+  ).map(checkbox => checkbox.nextElementSibling.textContent); // 체크박스의 레이블 값 가져오기
 
 
   fetch('https://api.airtable.com/v0/appPiYXEtFPbUQZ2y/tblDGbgZOK4k2n5TD', {
@@ -57,6 +60,7 @@ document.getElementById('ft-form').addEventListener('submit', function(event) {
               "현재 영어 학습 방식": learningCurrentMethods,
               "과거 영어 학습 방식 (기타)": past_etc,
               "현재 영어 학습 방식 (기타)": current_etc,
+              "아이의 성향/선호": tendencyMethods,
               // 과거 기간
               "과거) 국제학교 교육 기간": getCheckedValue('past_eng_learning', 'past_global_date'),
               "과거) 학교 정규 수업 / 원어민 교육 기간": getCheckedValue('past_eng_learning', 'past_school_native_date'),
@@ -119,7 +123,7 @@ document.getElementById('ft-form').addEventListener('submit', function(event) {
               "어떤 게임을 해 본 적이 있나요?": gameTypeMethods,
               "어떤 디바이스로 하나요?": gameDeviceMethods,
               // 개인 정보
-              "개인 정보 수집 및 이용 동의": private_agree 
+              "개인 정보 수집 및 이용 동의": private_agree
           }
       })
   })

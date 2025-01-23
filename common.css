@@ -46,12 +46,17 @@ ul {
 }
 
 .title-txt {
-  font-size: 30px;
+  font-size: 26px;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .title-info {
   font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: normal;
 }
 
 .ft-form-wrap {
@@ -107,7 +112,7 @@ ul {
 }
 
 .form-input {
-  width: 300px;
+  width: 360px;
   padding: 11px;
   border-radius: 6px;
   border: 1px solid #8E8E8E;
@@ -131,6 +136,11 @@ ul {
 .form-label {
   font-size: 20px;
   font-weight: 600;
+}
+
+.q-count {
+  font-size: 16px;
+  color: #079DD9;
 }
 
 .arrow-right {
@@ -209,6 +219,23 @@ ul {
   border-radius: 10px;
 }
 
+.checkbox-info {
+  font-size: 14px;
+}
+
+.checkbox-item-area {
+  display: flex;
+}
+
+.checkbox-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox-item:last-child {
+  margin-left: 10px;
+}
+
 /* list */
 .private-info-list {
   list-style-type: disc;
@@ -217,6 +244,8 @@ ul {
 
 .private-info-list li {
   margin-bottom: 8px;
+  line-height: 1.2;
+  letter-spacing: normal;
 }
 
 /* 개인 정보 수집 */
@@ -227,6 +256,7 @@ ul {
   border-radius: 8px;
   margin-bottom: 16px;
   padding: 16px;
+  letter-spacing: normal;
 }
 
 /* bg */
@@ -238,11 +268,29 @@ ul {
   background-color: #FFE9D3;
 }
 
+.bg-mint {
+  background-color: #a7ffcd;
+}
+
+.bg-pink {
+  background-color: #f7d3ff;
+}
+
 /* submit */
 .submit-info {
   display: flex;
   justify-content: end;
   margin-top: 16px;
+}
+
+/* logo */
+.logo {
+  background: url("logo_01.png");
+  width: 150px;
+  height: 33px;
+  background-size: 150px;
+  display: inline-block;
+  background-repeat: no-repeat;
 }
 
 /* Mobile - Landscape */
@@ -251,31 +299,34 @@ ul {
     margin-bottom: 26px;
   }
   .form-main {
-    padding: 30px;
+    padding: 20px;
   }
   .form-area {
     padding: 16px;
-    width: 85%;
+    width: 95%;
   }
   .form-contents-wrap {
     padding-inline: 14px;
     padding-block: 20px;
   }
   .form-label {
-    font-size: 14px;
+    font-size: 12px;
   }
   .sub-title {
-    font-size: 17px;
+    font-size: 15px;
+  }
+  .q-count {
+    font-size: 10px;
   }
   .input-wrap {
     flex-flow: wrap;
     flex-direction: column;
   }
   .label-caption {
-    font-size: 12px;
+    font-size: 10px;
   }
   .title-txt {
-    font-size: 24px;
+    font-size: 18px;
   }
   .title-info {
     font-size: 10px;
@@ -286,12 +337,16 @@ ul {
     width: 100%;
   }
   .form-radio {
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     align-items: center;
   }
   .input-area {
     padding: 0;
+  }
+  .input-sub-wrap {
+    margin-left: 4px;
+    margin-block: 6px;
   }
   input[type="radio" i] {
     width: 10px;
@@ -304,33 +359,50 @@ ul {
     width: 10px;
   }
   .form-checkbox-label {
-    font-size: 12px;
+    font-size: 9px;
     display: flex;
     align-items: center;
+    flex-flow: wrap;
   }
   .checkbox-pin {
     padding: 6px 8px;
   }
   .private-info-txt {
-    font-size: 12px;
+    font-size: 10px;
   }
   .private-info-list {
-    font-size: 12px;
+    font-size: 10px;
   }
   .submit-info {
-    font-size: 14px;
+    font-size: 12px;
   }
   .submit-btn {
-    padding: 11px 20px;
-    font-size: 14px;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+  .checkbox-info {
+    font-size: 8px;
+    margin-left: 4px;
+  }
+  .arrow-right {
+    width: 8px;
+    background-size: 8px;
+    height: 8px;
+  }
+  .input-sub-wrap .form-select {
+    margin-bottom: 12px;
+    margin-left: 14px;
+    width: 80%;
+  }
+  .input-sub-wrap .checkbox-info {
+    margin-top: 8px;
+  }
+  .logo {
+    width: 75px;
+    height: 18px;
+    background-size: 75px;
+  }
+  .checkbox-item:last-child {
+    margin-left: 4px;
   }
 }
-
-/* Tablet */
-@media (min-width: 768px) {}
-
-/* Desktop */
-@media (min-width: 992px) {}
-
-/* Desktop (Large) */
-@media (min-width: 1200px) {}
