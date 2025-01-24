@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 과거 학습 체크박스 처리
     if (pastNoneOption && pastAllCheckboxes.length > 0) {
-        // 현재 없음 클릭 시 현재 체크박스들만 해제
+        // 과거 없음 클릭 시 현재 체크박스들만 해제
         pastNoneOption.addEventListener('change', function () {
             if (this.checked) {
                 pastAllCheckboxes.forEach(checkbox => {
@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 });
             }
         });
-        // 현재 없음 클릭 시 현재 체크박스들만 해제
+        // 과거 없음 클릭 시 현재 체크박스들만 해제
         pastNoneOption.addEventListener('change', function () {
             if (this.checked) {
                 pastSubCheckboxes.forEach(checkbox => {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // 현재 체크박스 클릭 시 현재 없음 해제
+        // 과거 체크박스 클릭 시 과거 없음 해제
         pastAllCheckboxes.forEach(checkbox => {
             checkbox.addEventListener('change', function () {
                 if (this.checked) {

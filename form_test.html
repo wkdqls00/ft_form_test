@@ -31,7 +31,7 @@
                         <!-- 부모님 연락처 -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="parent_phone"><span class="q-count">(1/16)</span> 부모님 연락처</label>
+                                <label class="form-label" for="parent_phone">부모님 연락처 <span class="q-count">(1/16)</span></label>
                                 <p class="label-caption">연락 주신 부모님의 휴대폰 번호를 다시 한번 기입해 주세요</p>
                             </div>
                             <input type="text" id="parent_phone" class="form-input" placeholder="- 없이 숫자만 입력" required>
@@ -39,7 +39,7 @@
                         <!-- 아이의 영어 이름 -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="eng_name"><span class="q-count">(2/16)</span> 아이의 영어 이름</label>
+                                <label class="form-label" for="eng_name">아이의 영어 이름 <span class="q-count">(2/16)</span></label>
                                 <p class="label-caption">한글 이름을 영어로 써 주셔도 됩니다.</p>
                             </div>
                             <input type="text" id="eng_name" class="form-input" placeholder="영어로 입력" required>
@@ -47,7 +47,7 @@
                         <!-- 아이의 출생 연도 -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="birth"><span class="q-count">(3/16)</span> 아이의 출생 연도</label>
+                                <label class="form-label" for="birth">아이의 출생 연도 <span class="q-count">(3/16)</span></label>
                             </div>
                             <select id="birth" class="form-input form-select">
                                 <option value="2002년">2003년</option>
@@ -75,7 +75,7 @@
                         <!-- 아이의 학년 -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="grade"><span class="q-count">(4/16)</span> 아이의 학년</label>
+                                <label class="form-label" for="grade">아이의 학년 <span class="q-count">(4/16)</span></label>
                             </div>
                             <select id="grade" class="form-input form-select">
                                 <option value="유치원생">유치원생</option>
@@ -99,12 +99,20 @@
                                 <option value="G4">G4</option>
                                 <option value="G5">G5</option>
                                 <option value="G6">G6</option>
+                                <option value="G7">G7</option>
+                                <option value="G8">G8</option>
+                                <option value="G9">G9</option>
+                                <option value="G10">G10</option>
+                                <option value="G11">G11</option>
+                                <option value="G12">G12</option>
+                                <option value="기타">기타</option>
                             </select>
+                            
                         </div>
                         <!-- 아이의 성별 -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="gender"><span class="q-count">(5/16)</span> 아이의 성별</label>
+                                <label class="form-label" for="gender">아이의 성별 <span class="q-count">(5/16)</span></label>
                             </div>
                             <label class="form-radio pb-8">
                                 <input type="radio" value="남자" name="gender">
@@ -118,7 +126,7 @@
                         <!-- PC(컴퓨터, 노트북)을 보유하고 계신가요? -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="pc_have"><span class="q-count">(6/16)</span> PC(컴퓨터, 노트북)을 보유하고 계신가요?</label>
+                                <label class="form-label" for="pc_have">PC(컴퓨터, 노트북)을 보유하고 계신가요? <span class="q-count">(6/16)</span></label>
                                 <p class="label-caption">플랭귀지 수업은 컴퓨터나 노트북으로 진행돼요. (아쉽게도 패드나 핸드폰으로는 수업에 참여할 수 없어요.)</p>
                             </div>
                             <label class="form-radio pb-8">
@@ -133,7 +141,7 @@
                         <!-- 마이크가 있는 헤드셋(이어폰)을 보유하고 계신가요? -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="mic_have"><span class="q-count">(7/16)</span> 마이크가 있는 헤드셋(이어폰)을 보유하고 계신가요?</label>
+                                <label class="form-label" for="mic_have">마이크가 있는 헤드셋(이어폰)을 보유하고 계신가요? <span class="q-count">(7/16)</span></label>
                                 <p class="label-caption">수업 시간에 선명한 음질로 원어민 선생님과 의사소통하기 위해서는 마이크가 있는 헤드셋이나 이어폰이 필요해요.</p>
                             </div>
                             <label class="form-radio pb-8">
@@ -148,96 +156,138 @@
                         <!-- 아이의 성향, 선호 -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="tendency"><span class="q-count">(8/16)</span> 평소 우리 아이들은 어떤 성향을 가지고 있을까요?</label>
+                                <label class="form-label" for="tendency">평소 우리 아이들은 어떤 성향을 가지고 있을까요? <span class="q-count">(8/16)</span></label>
                                 <p class="label-caption">다수 선택 가능</p>
                             </div>
                             <div class="checkbox-item-area">
                                 <div class="checkbox-item">
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-mint">활달함</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_01">
+                                        <label for="tendency_01">
+                                            <span class="checkbox-pin bg-deepblue">활달함</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-mint">차분함</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_02">
+                                        <label for="tendency_02">
+                                            <span class="checkbox-pin bg-deepblue">차분함</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-pink">동성 친구/선생님 선호</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_03">
+                                        <label for="tendency_03">
+                                            <span class="checkbox-pin bg-pink">동성 친구/선생님 선호</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-pink">이성 친구/선생님 선호</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_04">
+                                        <label for="tendency_04">
+                                            <span class="checkbox-pin bg-pink">이성 친구/선생님 선호</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-skyblue">게임에 흥미 높음</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_05">
+                                        <label for="tendency_05">
+                                            <span class="checkbox-pin bg-skyblue">게임에 흥미 높음</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-skyblue">게임에 흥미 낮음</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_06">
+                                        <label for="tendency_06">
+                                            <span class="checkbox-pin bg-skyblue">게임에 흥미 낮음</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-pink">대화하기 좋아함</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_07">
+                                        <label for="tendency_07">
+                                            <span class="checkbox-pin bg-pink">대화하기 좋아함</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-pink">말수가 적음</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_08">
+                                        <label for="tendency_08">
+                                            <span class="checkbox-pin bg-pink">말수가 적음</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-mint">풍부한 감수성</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_09">
+                                        <label for="tendency_09">
+                                            <span class="checkbox-pin bg-deepblue">풍부한 감수성</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-mint">현실적이고 무던함</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_10">
+                                        <label for="tendency_10">
+                                            <span class="checkbox-pin bg-deepblue">현실적이고 무던함</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-skyblue">아이가 초4병 같아요</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_10">
+                                        <label for="tendency_10">
+                                            <span class="checkbox-pin bg-skyblue">아이가 초4병 같아요</span>
+                                        </label>
                                     </label>
                                 </div>
                                 <div class="checkbox-item">
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-skyblue">(영어 말하기) 자신감</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_11">
+                                        <label for="tendency_11">
+                                            <span class="checkbox-pin bg-skyblue">(영어 말하기) 자신감</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-skyblue">(영어 말하기) 수줍어함</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_12">
+                                        <label for="tendency_12">
+                                            <span class="checkbox-pin bg-skyblue">(영어 말하기) 수줍어함</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-mint">협동적</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_13">
+                                        <label for="tendency_13">
+                                            <span class="checkbox-pin bg-deepblue">협동적</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-mint">경쟁적</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_14">
+                                        <label for="tendency_14">
+                                            <span class="checkbox-pin bg-deepblue">경쟁적</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-pink">독립적</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_15">
+                                        <label for="tendency_15">
+                                            <span class="checkbox-pin bg-pink">독립적</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-pink">의존적</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_16">
+                                        <label for="tendency_16">
+                                            <span class="checkbox-pin bg-pink">의존적</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-skyblue">사교적</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_17">
+                                        <label for="tendency_17">
+                                            <span class="checkbox-pin bg-skyblue">사교적</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-skyblue">낯가림</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_18">
+                                        <label for="tendency_18">
+                                            <span class="checkbox-pin bg-skyblue">낯가림</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-pink">리더십</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_19">
+                                        <label for="tendency_19">
+                                            <span class="checkbox-pin bg-pink">리더십</span>
+                                        </label>
                                     </label>
                                     <label class="form-checkbox-label">
-                                        <input type="checkbox" class="form-checkbox" name="tendency">
-                                        <span class="checkbox-pin bg-pink">팔로우십</span>
+                                        <input type="checkbox" class="form-checkbox" name="tendency" id="tendency_20">
+                                        <label for="tendency_20">
+                                            <span class="checkbox-pin bg-pink">팔로우십</span>
+                                        </label>
                                     </label>
                                 </div>
                             </div>
@@ -258,7 +308,7 @@
                     <div class="input-area">
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label"><span class="q-count">(9/16)</span> 영어 학습 방식 카테고리</label>
+                                <label class="form-label">영어 학습 방식 카테고리 <span class="q-count">(9/16)</span></label>
                                 <div class="label-caption">
                                     <span>향후 학생의 평가에 큰 영향을 미치는 항목입니다. (다수의 과정이 있었다면 다수 선택 부탁드립니다.)</span>
                                     <span>카테고리 선택 시 하위 선택 항목이 나옵니다.</span>
@@ -267,28 +317,32 @@
                             <div class="form-list-wrap">
                                 <!-- 학교 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="past_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">학교</span>
+                                    <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_school">
+                                    <label class="" for="past_school">
+                                        <span class="checkbox-pin bg-pink">학교</span>
+                                    </label>
                                     <span class="checkbox-info">(학교 정규 수업, 국제학교 등)</span>
                                 </label>
                                 <!-- 학교 선택 시 : 학교 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">학교에서의 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 국제학교 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_global_date">
-                                            <span class="checkbox-pin bg-orange">국제학교</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_global_date" id="past_global">
+                                            <label for="past_global">
+                                                <span class="checkbox-pin bg-orange">국제학교</span>
+                                            </label>
+                                        </div>
                                         <!-- 국제학교 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_global_date">국제학교 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_global_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -305,16 +359,18 @@
                                             </select>
                                         </div>
                                         <!-- 학교 정규 수업 / 원어민 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_school_native_date">
-                                            <span class="checkbox-pin bg-orange">학교 정규 수업 / 원어민</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_school_native_date" id="past_school_native">
+                                            <label for="past_school_native">
+                                                <span class="checkbox-pin bg-orange">학교 정규 수업 / 원어민</span>
+                                            </label>
+                                        </div>
                                         <!-- 학교 정규 수업 / 원어민 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_school_native_date">학교 정규 수업 / 원어민 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_school_native_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -331,16 +387,18 @@
                                             </select>
                                         </div>
                                         <!-- 학교 정규 수업 / 내국인 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_school_korean_date">
-                                            <span class="checkbox-pin bg-orange">학교 정규 수업 / 내국인</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_school_korean_date" id="past_school_korean">
+                                            <label for="past_school_korean">
+                                                <span class="checkbox-pin bg-orange">학교 정규 수업 / 내국인</span>
+                                            </label>
+                                        </div>
                                         <!-- 학교 정규 수업 / 내국인 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_school_korean_date">학교 정규 수업 / 내국인 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_school_korean_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -357,17 +415,19 @@
                                             </select>
                                         </div>
                                         <!-- 학교 방과후 수업 / 원어민 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_after_native">
-                                            <span class="checkbox-pin bg-orange">학교 방과후 수업 / 원어민</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_after_native_date" id="past_after_native">
+                                            <label for="past_after_native">
+                                                <span class="checkbox-pin bg-orange">학교 방과후 수업 / 원어민</span>
+                                            </label>
+                                        </div>
                                         <!-- 학교 방과후 수업 / 원어민 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
-                                                <label class="form-label" for="past_after_native">학교 방과후 수업 / 원어민 교육 기간</label>
-                                            </div>
-                                            <select class="form-input form-select" id="past_after_native">
+                                                <label class="form-label" for="past_after_native_date">학교 방과후 수업 / 원어민 교육 기간</label>
+                                            </div> -->
+                                            <select class="form-input form-select" id="past_after_native_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
                                                 <option value="1년 6개월 ~ 2년">1년 6개월 ~ 2년</option>
@@ -383,17 +443,19 @@
                                             </select>
                                         </div>
                                         <!-- 학교 방과후 수업 / 내국인 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_after_korean">
-                                            <span class="checkbox-pin bg-orange">학교 방과후 수업 / 내국인</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_after_korean_date" id="past_after_korean">
+                                            <label for="past_after_korean">
+                                                <span class="checkbox-pin bg-orange">학교 방과후 수업 / 내국인</span>
+                                            </label>
+                                        </div>
                                         <!-- 학교 방과후 수업 / 내국인 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
-                                                <label class="form-label" for="past_after_korean">학교 방과후 수업 / 내국인 교육 기간</label>
-                                            </div>
-                                            <select class="form-input form-select" id="past_after_korean">
+                                                <label class="form-label" for="past_after_korean_date">학교 방과후 수업 / 내국인 교육 기간</label>
+                                            </div> -->
+                                            <select class="form-input form-select" id="past_after_korean_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
                                                 <option value="1년 6개월 ~ 2년">1년 6개월 ~ 2년</option>
@@ -412,28 +474,32 @@
                                 </div>
                                 <!-- 학원 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="past_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">학원</span>
+                                    <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_academy">
+                                    <label for="past_academy">
+                                        <span class="checkbox-pin bg-pink">학원</span>
+                                    </label>
                                     <span class="checkbox-info">(영어유치원, 영어도서관 등)</span>
                                 </label>
                                 <!-- 학원 선택 시 : 학원 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">학원에서의 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 원어민 그룹 수업 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_native_group_date">
-                                            <span class="checkbox-pin bg-orange">원어민 그룹 수업</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_native_group_date" id="past_native_group">
+                                            <label for="past_native_group">
+                                                <span class="checkbox-pin bg-orange">원어민 그룹 수업</span>
+                                            </label>
+                                        </div>
                                         <!-- 원어민 그룹 수업 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_native_group_date">원어민 그룹 수업 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_native_group_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -450,16 +516,18 @@
                                             </select>
                                         </div>
                                         <!-- 내국인 영어 그룹 수업 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_korean_group_date">
-                                            <span class="checkbox-pin bg-orange">내국인 영어 그룹 수업</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_korean_group_date" id="past_korean_group">
+                                            <label for="past_korean_group">
+                                                <span class="checkbox-pin bg-orange">내국인 그룹 수업</span>
+                                            </label>
+                                        </div>
                                         <!-- 내국인 영어 그룹 수업 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_korean_group_date">내국인 영어 그룹 수업 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_korean_group_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -476,16 +544,18 @@
                                             </select>
                                         </div>
                                         <!-- 랩실 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_lab_date">
-                                            <span class="checkbox-pin bg-orange">랩실</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_lab_date" id="past_lab">
+                                            <label for="past_lab">
+                                                <span class="checkbox-pin bg-orange">랩실</span>
+                                            </label>
+                                        </div>
                                         <!-- 랩실 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_lab_date">랩실 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_lab_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -502,16 +572,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어도서관 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_library_date">
-                                            <span class="checkbox-pin bg-orange">영어도서관</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_library_date" id="past_library">
+                                            <label for="past_library">
+                                                <span class="checkbox-pin bg-orange">영어도서관</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어도서관 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_library_date">영어도서관 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_library_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -528,17 +600,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어 공부방 및 교습소 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_study_room_date">
-                                            <span class="checkbox-pin bg-orange">영어 공부방 및 교습소</span>
-                                            <span class="checkbox-info"> - 아담한 곳에서 원장 선생님께서 직접 가르쳐 주세요.</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_study_room_date" id="past_study_room">
+                                            <label for="past_study_room">
+                                                <span class="checkbox-pin bg-orange">영어 공부방 및 교습소</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어 공부방 및 교습소 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_study_room_date">영어 공부방 및 교습소 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_study_room_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -555,16 +628,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어유치원 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_eng_kindergraden_date">
-                                            <span class="checkbox-pin bg-orange">영어유치원</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_eng_kindergraden_date" id="past_eng_kindergraden">
+                                            <label for="past_eng_kindergraden">
+                                                <span class="checkbox-pin bg-orange">영어유치원</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어유치원 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_eng_kindergraden_date">영어유치원 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_eng_kindergraden_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -581,16 +656,18 @@
                                             </select>
                                         </div>
                                         <!-- 유치원 및 놀이 학교 내 영어 수업 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_normal_kindergarden_date">
-                                            <span class="checkbox-pin bg-orange">유치원 및 놀이 학교 내 영어 수업</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_normal_kindergarden_date" id="past_normal_kindergarden">
+                                            <label for="past_normal_kindergarden">
+                                                <span class="checkbox-pin bg-orange">유치원 및 놀이 학교 내 영어 수업</span>
+                                            </label>
+                                        </div>
                                         <!-- 유치원 및 놀이 학교 내 영어 수업 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_normal_kindergarden_date">유치원 및 놀이 학교 내 영어 수업 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_normal_kindergarden_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -607,17 +684,18 @@
                                             </select>
                                         </div>
                                         <!-- 엄마표 영어 코칭 센터 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_mother_date">
-                                            <span class="checkbox-pin bg-orange">엄마표 영어 코칭 센터</span>
-                                            <span class="checkbox-info"> - 아이와 함께 가서 영어도, 영어 교육법도 함께 배우고 있어요!</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_mother_date" id="past_mother">
+                                            <label for="past_mother">
+                                                <span class="checkbox-pin bg-orange">엄마표 영어 코칭 센터</span>
+                                            </label>
+                                        </div>
                                         <!-- 엄마표 영어 코칭 센터 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_mother_date">엄마표 영어 코칭 센터 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_mother_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -637,28 +715,32 @@
                                 </div>
                                 <!-- 대면 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="past_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">대면</span>
+                                    <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_face">
+                                    <label for="past_face">
+                                        <span class="checkbox-pin bg-pink">대면</span>
+                                    </label>
                                     <span class="checkbox-info">(원어민 과외, 방문영어 등)</span>
                                 </label>
                                 <!-- 대면 선택 시 : 대면 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">대면 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 원어민 과외 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_native_class_date">
-                                            <span class="checkbox-pin bg-orange">원어민 과외</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_native_class_date" id="past_native_class">
+                                            <label for="past_native_class">
+                                                <span class="checkbox-pin bg-orange">원어민 과외</span>
+                                            </label>
+                                        </div>
                                         <!-- 원어민 과외 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_native_class_date">원어민 과외 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_native_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -675,16 +757,18 @@
                                             </select>
                                         </div>
                                         <!-- 내국인 영어 과외 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_korean_class_date">
-                                            <span class="checkbox-pin bg-orange">내국인 영어 과외</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_korean_class_date" id="past_korean_class">
+                                            <label for="past_korean_class">
+                                                <span class="checkbox-pin bg-orange">내국인 영어 과외</span>
+                                            </label>
+                                        </div>
                                         <!-- 내국인 영어 과외 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_korean_class_date">내국인 영어 과외 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_korean_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -701,17 +785,19 @@
                                             </select>
                                         </div>
                                         <!-- 방문 영어 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_visit_date">
-                                            <span class="checkbox-pin bg-orange">방문 영어</span>
-                                            <span class="checkbox-info"> - 혼자서도 잘하는 아이! 관리 선생님이 정기적으로 방문해 주세요.</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_visit_date" id="past_visit">
+                                            <label for="past_visit">
+                                                <span class="checkbox-pin bg-orange">방문 영어</span>
+                                                <span class="checkbox-info"> - 혼자서도 잘하는 아이! 관리 선생님이 정기적으로 방문해 주세요.</span>
+                                            </label>
+                                        </div>
                                         <!-- 방문 영어 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_visit_date">방문 영어 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_visit_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -728,16 +814,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어키즈카페 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_kids_cafe_date">
-                                            <span class="checkbox-pin bg-orange">영어키즈카페</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_kids_cafe_date" id="past_kids_cafe">
+                                            <label for="past_kids_cafe">
+                                                <span class="checkbox-pin bg-orange">영어키즈카페</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어키즈카페 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_kids_cafe_date">영어키즈카페 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_kids_cafe_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -757,28 +845,32 @@
                                 </div>
                                 <!-- 비대면 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="past_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">비대면</span>
+                                    <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_not_face">
+                                    <label for="past_not_face">
+                                        <span class="checkbox-pin bg-pink">비대면</span>
+                                    </label>
                                     <span class="checkbox-info">(학습지, 영어원서구독 등)</span>
                                 </label>
                                 <!-- 비대면 선택 시 : 비대면 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">비대면 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 화상영어 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_virtual_date">
-                                            <span class="checkbox-pin bg-orange">화상영어</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_virtual_date" id="past_virtual">
+                                            <label for="past_virtual">
+                                                <span class="checkbox-pin bg-orange">화상영어</span>
+                                            </label>
+                                        </div>
                                         <!-- 화상영어 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_virtual_date">화상영어 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_virtual_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -795,16 +887,18 @@
                                             </select>
                                         </div>
                                         <!-- 전화영어 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_call_date">
-                                            <span class="checkbox-pin bg-orange">전화영어</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_call_date" id="past_call">
+                                            <label for="past_call">
+                                                <span class="checkbox-pin bg-orange">전화영어</span>
+                                            </label>
+                                        </div>
                                         <!-- 전화영어 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_call_date">전화영어 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_call_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -821,16 +915,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어앱 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_app_date">
-                                            <span class="checkbox-pin bg-orange">영어앱</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_app_date" id="past_app">
+                                            <label for="past_app">
+                                                <span class="checkbox-pin bg-orange">영어앱</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어앱 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_app_date">영어앱 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_app_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -847,16 +943,18 @@
                                             </select>
                                         </div>
                                         <!-- 학습지 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_worksheet_date">
-                                            <span class="checkbox-pin bg-orange">학습지</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_worksheet_date" id="past_worksheet">
+                                            <label for="past_worksheet">
+                                                <span class="checkbox-pin bg-orange">학습지</span>
+                                            </label>
+                                        </div>
                                         <!-- 학습지 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_worksheet_date">학습지 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_worksheet_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -873,16 +971,18 @@
                                             </select>
                                         </div>
                                         <!-- 인강 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_internet_class_date">
-                                            <span class="checkbox-pin bg-orange">인강</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_internet_class_date" id="past_internet_class">
+                                            <label for="past_internet_class">
+                                                <span class="checkbox-pin bg-orange">인강</span>
+                                            </label>
+                                        </div>
                                         <!-- 인강 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_internet_class_date">인강 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_internet_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -899,17 +999,19 @@
                                             </select>
                                         </div>
                                         <!-- 영어 원서 구독 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_original_date">
-                                            <span class="checkbox-pin bg-orange">영어 원서 구독</span>
-                                            <span class="checkbox-info"> - 아이가 다양한 영어책을 읽고 앱으로도 학습한다면 여깁니다, 학부모님!</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_original_date" id="past_original">
+                                            <label for="past_original">
+                                                <span class="checkbox-pin bg-orange">영어 원서 구독</span>
+                                                <span class="checkbox-info"> - 아이가 다양한 영어책을 읽고 앱으로도 학습한다면 여깁니다, 학부모님!</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어 원서 구독 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_original_date">영어 원서 구독 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id=past_original_date>
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -929,28 +1031,32 @@
                                 </div>
                                 <!-- 개인 환경 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="past_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">개인 환경</span>
+                                    <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_personl">
+                                    <label for="past_personl">
+                                        <span class="checkbox-pin bg-pink">개인 환경</span>
+                                    </label>
                                     <span class="checkbox-info">(해외 거주, 가정교육 등)</span>
                                 </label>
                                 <!-- 개인환경 선택 시 : 개인환경 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">개인환경에서의 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 해외 거주 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_overseas_date">
-                                            <span class="checkbox-pin bg-orange">해외 거주</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_overseas_date" id="past_overseas">
+                                            <label for="past_overseas">
+                                                <span class="checkbox-pin bg-orange">영어 원서 구독</span>
+                                            </label>
+                                        </div>
                                         <!-- 해외 거주 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_overseas_date">해외 거주 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_overseas_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -968,17 +1074,19 @@
                                             <input type="text" id="past_overseas_country" class="form-input" placeholder="거주한 국가">
                                         </div>
                                         <!-- 가정교육 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_home_class_date">
-                                            <span class="checkbox-pin bg-orange">가정교육</span>
-                                            <span class="checkbox-info"> - 엄마(아빠)표, 유튜브 시청 등 가정에서 잘하는 아이들은 여기를 클릭해 주세요!</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_home_class_date" id="past_home_class">
+                                            <label for="past_home_class">
+                                                <span class="checkbox-pin bg-orange">가정교육</span>
+                                                <span class="checkbox-info"> - 엄마(아빠)표 등 가정에서 잘하는 아이들은 여기를 클릭해 주세요!</span>
+                                            </label>
+                                        </div>
                                         <!-- 가정교육 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_home_class_date">가정교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_home_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -995,17 +1103,19 @@
                                             </select>
                                         </div>
                                         <!-- 멀티미디어 노출 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_home_class_date">
-                                            <span class="checkbox-pin bg-orange">멀티미디어 노출</span>
-                                            <span class="checkbox-info"> - 유튜브, 영상교재 등</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_media_date" id="past_media">
+                                            <label for="past_media">
+                                                <span class="checkbox-pin bg-orange">멀티미디어 노출</span>
+                                                <span class="checkbox-info"> - 유튜브, 영상교재 등</span>
+                                            </label>
+                                        </div>
                                         <!-- 멀티미디어 노출 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_home_class_date">멀티미디어 노출 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_home_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1022,16 +1132,18 @@
                                             </select>
                                         </div>
                                         <!-- 책읽기 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox" value="past_home_class_date">
-                                            <span class="checkbox-pin bg-orange">책읽기</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="past_book_date" id="past_book">
+                                            <label for="past_book">
+                                                <span class="checkbox-pin bg-orange">책읽기</span>
+                                            </label>
+                                        </div>
                                         <!-- 책읽기 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="past_home_class_date">책읽기 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="past_home_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1051,16 +1163,20 @@
                                 </div>
                                 <!-- 기타 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" name="past_eng_category" class="form-checkbox">
-                                    <span class="checkbox-pin bg-skyblue">기타</span>
+                                    <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_etc_category">
+                                    <label for="past_etc_category">
+                                        <span class="checkbox-pin bg-pink">기타</span>
+                                    </label>
                                 </label>
                                 <div class="input-sub-wrap" style="display: none; padding-bottom: 16px">
                                     <input type="text" id="past_etc" class="form-input" placeholder="학습 방식과 기간을 말씀해 주세요.">
                                 </div>
                                 <!-- 없음 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" id="past_none_option" class="form-checkbox">
-                                    <span class="checkbox-pin bg-skyblue">없음</span>
+                                    <input type="checkbox" class="form-checkbox" id="past_none_option">
+                                    <label for="past_none_option">
+                                        <span class="checkbox-pin bg-pink">없음</span>
+                                    </label>
                                 </label>
                             </div>
                         </div>
@@ -1080,7 +1196,7 @@
                     <div class="input-area">
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label"><span class="q-count">(10/16)</span> 영어 학습 방식 카테고리</label>
+                                <label class="form-label">영어 학습 방식 카테고리 <span class="q-count">(10/16)</span></label>
                                 <div class="label-caption">
                                     <span>향후 학생의 평가에 큰 영향을 미치는 항목입니다. (다수의 과정이 있었다면 다수 선택 부탁드립니다.)</span>
                                     <span>카테고리 선택 시 하위 선택 항목이 나옵니다.</span>
@@ -1089,28 +1205,32 @@
                             <div class="form-list-wrap">
                                 <!-- 학교 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="current_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">학교</span>
+                                    <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_school">
+                                    <label class="" for="current_school">
+                                        <span class="checkbox-pin bg-pink">학교</span>
+                                    </label>
                                     <span class="checkbox-info">(학교 정규 수업, 국제학교 등)</span>
                                 </label>
                                 <!-- 학교 선택 시 : 학교 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">학교에서의 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 국제학교 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_global_date">
-                                            <span class="checkbox-pin bg-orange">국제학교</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_global_date" id="current_global">
+                                            <label for="current_global">
+                                                <span class="checkbox-pin bg-orange">국제학교</span>
+                                            </label>
+                                        </div>
                                         <!-- 국제학교 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_global_date">국제학교 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_global_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1127,16 +1247,18 @@
                                             </select>
                                         </div>
                                         <!-- 학교 정규 수업 / 원어민 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_school_native_date">
-                                            <span class="checkbox-pin bg-orange">학교 정규 수업 / 원어민</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_school_native_date" id="current_school_native">
+                                            <label for="current_school_native">
+                                                <span class="checkbox-pin bg-orange">학교 정규 수업 / 원어민</span>
+                                            </label>
+                                        </div>
                                         <!-- 학교 정규 수업 / 원어민 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_school_native_date">학교 정규 수업 / 원어민 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_school_native_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1153,16 +1275,18 @@
                                             </select>
                                         </div>
                                         <!-- 학교 정규 수업 / 내국인 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_school_korean_date">
-                                            <span class="checkbox-pin bg-orange">학교 정규 수업 / 내국인</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_school_korean_date" id="current_school_korean">
+                                            <label for="current_school_korean">
+                                                <span class="checkbox-pin bg-orange">학교 정규 수업 / 내국인</span>
+                                            </label>
+                                        </div>
                                         <!-- 학교 정규 수업 / 내국인 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_school_korean_date">학교 정규 수업 / 내국인 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_school_korean_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1179,16 +1303,18 @@
                                             </select>
                                         </div>
                                         <!-- 학교 방과후 수업 / 원어민 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_after_native">
-                                            <span class="checkbox-pin bg-orange">학교 방과후 수업 / 원어민</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_after_native_date" id="current_after_native">
+                                            <label for="current_after_native">
+                                                <span class="checkbox-pin bg-orange">학교 정규 수업 / 원어민</span>
+                                            </label>
+                                        </div>
                                         <!-- 학교 방과후 수업 / 원어민 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_after_native">학교 방과후 수업 / 원어민 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_after_native">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1205,16 +1331,18 @@
                                             </select>
                                         </div>
                                         <!-- 학교 방과후 수업 / 내국인 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_after_korean">
-                                            <span class="checkbox-pin bg-orange">학교 방과후 수업 / 내국인</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_after_korean_date" id="current_after_korean">
+                                            <label for="current_after_korean">
+                                                <span class="checkbox-pin bg-orange">학교 방과후 수업 / 내국인</span>
+                                            </label>
+                                        </div>
                                         <!-- 학교 방과후 수업 / 내국인 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_after_korean">학교 방과후 수업 / 내국인 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_after_korean">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1234,28 +1362,32 @@
                                 </div>
                                 <!-- 학원 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="current_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">학원</span>
+                                    <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_academy">
+                                    <label for="current_academy">
+                                        <span class="checkbox-pin bg-pink">학원</span>
+                                    </label>
                                     <span class="checkbox-info">(영어유치원, 영어도서관 등)</span>
                                 </label>
                                 <!-- 학원 선택 시 : 학원 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">학원에서의 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 원어민 그룹 수업 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_native_group_date">
-                                            <span class="checkbox-pin bg-orange">원어민 그룹 수업</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_native_group_date" id="current_native_group">
+                                            <label for="current_native_group">
+                                                <span class="checkbox-pin bg-orange">원어민 그룹 수업</span>
+                                            </label>
+                                        </div>
                                         <!-- 원어민 그룹 수업 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_native_group_date">원어민 그룹 수업 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_native_group_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1272,16 +1404,18 @@
                                             </select>
                                         </div>
                                         <!-- 내국인 영어 그룹 수업 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_korean_group_date">
-                                            <span class="checkbox-pin bg-orange">내국인 영어 그룹 수업</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_korean_group_date" id="current_korean_group">
+                                            <label for="current_korean_group">
+                                                <span class="checkbox-pin bg-orange">내국인 그룹 수업</span>
+                                            </label>
+                                        </div>
                                         <!-- 내국인 영어 그룹 수업 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_korean_group_date">내국인 영어 그룹 수업 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_korean_group_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1298,16 +1432,18 @@
                                             </select>
                                         </div>
                                         <!-- 랩실 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_lab_date">
-                                            <span class="checkbox-pin bg-orange">랩실</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_lab_date" id="current_lab">
+                                            <label for="current_lab">
+                                                <span class="checkbox-pin bg-orange">랩실</span>
+                                            </label>
+                                        </div>
                                         <!-- 랩실 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_lab_date">랩실 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_lab_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1324,16 +1460,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어도서관 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_library_date">
-                                            <span class="checkbox-pin bg-orange">영어도서관</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_library_date" id="current_library">
+                                            <label for="current_library">
+                                                <span class="checkbox-pin bg-orange">영어도서관</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어도서관 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_library_date">영어도서관 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_library_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1350,17 +1488,19 @@
                                             </select>
                                         </div>
                                         <!-- 영어 공부방 및 교습소 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_study_room_date">
-                                            <span class="checkbox-pin bg-orange">영어 공부방 및 교습소</span>
-                                            <span class="checkbox-info"> - 아담한 곳에서 원장 선생님께서 직접 가르쳐 주세요.</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_study_room_date" id="current_study_room">
+                                            <label for="current_study_room">
+                                                <span class="checkbox-pin bg-orange">영어 공부방 및 교습소</span>
+                                                <span class="checkbox-info"> - 아담한 곳에서 원장 선생님께서 직접 가르쳐 주세요.</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어 공부방 및 교습소 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_study_room_date">영어 공부방 및 교습소 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_study_room_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1377,16 +1517,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어유치원 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_eng_kindergraden_date">
-                                            <span class="checkbox-pin bg-orange">영어유치원</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_eng_kindergraden_date" id="current_eng_kindergraden">
+                                            <label for="current_eng_kindergraden">
+                                                <span class="checkbox-pin bg-orange">영어유치원</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어유치원 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_eng_kindergraden_date">영어유치원 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_eng_kindergraden_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1403,16 +1545,18 @@
                                             </select>
                                         </div>
                                         <!-- 유치원 및 놀이 학교 내 영어 수업 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_normal_kindergarden_date">
-                                            <span class="checkbox-pin bg-orange">유치원 및 놀이 학교 내 영어 수업</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_normal_kindergarden_date" id="current_normal_kindergarden">
+                                            <label for="current_normal_kindergarden">
+                                                <span class="checkbox-pin bg-orange">유치원 및 놀이 학교 내 영어 수업</span>
+                                            </label>
+                                        </div>
                                         <!-- 유치원 및 놀이 학교 내 영어 수업 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_normal_kindergarden_date">유치원 및 놀이 학교 내 영어 수업 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_normal_kindergarden_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1429,17 +1573,19 @@
                                             </select>
                                         </div>
                                         <!-- 엄마표 영어 코칭 센터 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_mother_date">
-                                            <span class="checkbox-pin bg-orange">엄마표 영어 코칭 센터</span>
-                                            <span class="checkbox-info"> - 아이와 함께 가서 영어도, 영어 교육법도 함께 배우고 있어요!</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_mother_date" id="current_mother">
+                                            <label for="current_mother">
+                                                <span class="checkbox-pin bg-orange">엄마표 영어 코칭 센터</span>
+                                                <span class="checkbox-info"> - 아이와 함께 가서 영어도, 영어 교육법도 함께 배우고 있어요!</span>
+                                            </label>
+                                        </div>
                                         <!-- 엄마표 영어 코칭 센터 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_mother_date">엄마표 영어 코칭 센터 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_mother_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1459,28 +1605,32 @@
                                 </div>
                                 <!-- 대면 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="current_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">대면</span>
+                                    <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_face">
+                                    <label for="current_face">
+                                        <span class="checkbox-pin bg-pink">대면</span>
+                                    </label>
                                     <span class="checkbox-info">(원어민 과외, 방문영어 등)</span>
                                 </label>
                                 <!-- 대면 선택 시 : 대면 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">대면 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 원어민 과외 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_native_class_date">
-                                            <span class="checkbox-pin bg-orange">원어민 과외</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_native_class_date" id="current_native_class">
+                                            <label for="current_native_class">
+                                                <span class="checkbox-pin bg-orange">원어민 과외</span>
+                                            </label>
+                                        </div>
                                         <!-- 원어민 과외 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_native_class_date">원어민 과외 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_native_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1497,16 +1647,18 @@
                                             </select>
                                         </div>
                                         <!-- 내국인 영어 과외 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_korean_class_date">
-                                            <span class="checkbox-pin bg-orange">내국인 영어 과외</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_korean_class_date" id="current_korean_class">
+                                            <label for="current_korean_class">
+                                                <span class="checkbox-pin bg-orange">내국인 영어 과외</span>
+                                            </label>
+                                        </div>
                                         <!-- 내국인 영어 과외 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_korean_class_date">내국인 영어 과외 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_korean_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1523,17 +1675,19 @@
                                             </select>
                                         </div>
                                         <!-- 방문 영어 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_visit_date">
-                                            <span class="checkbox-pin bg-orange">방문 영어</span>
-                                            <span class="checkbox-info"> - 혼자서도 잘하는 아이! 관리 선생님이 정기적으로 방문해 주세요.</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_visit_date" id="current_visit">
+                                            <label for="current_visit">
+                                                <span class="checkbox-pin bg-orange">방문영어</span>
+                                                <span class="checkbox-info"> - 혼자서도 잘하는 아이! 관리 선생님이 정기적으로 방문해 주세요.</span>
+                                            </label>
+                                        </div>
                                         <!-- 방문 영어 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_visit_date">방문 영어 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_visit_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1550,16 +1704,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어키즈카페 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_kids_cafe_date">
-                                            <span class="checkbox-pin bg-orange">영어키즈카페</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_kids_cafe_date" id="current_kids_cafe">
+                                            <label for="current_kids_cafe">
+                                                <span class="checkbox-pin bg-orange">영어키즈카페</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어키즈카페 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_kids_cafe_date">영어키즈카페 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_kids_cafe_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1579,28 +1735,32 @@
                                 </div>
                                 <!-- 비대면 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="current_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">비대면</span>
+                                    <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_not_face">
+                                    <label for="current_not_face">
+                                        <span class="checkbox-pin bg-pink">비대면</span>
+                                    </label>
                                     <span class="checkbox-info">(학습지, 영어원서구독 등)</span>
                                 </label>
                                 <!-- 비대면 선택 시 : 비대면 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">비대면 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 화상영어 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_virtual_date">
-                                            <span class="checkbox-pin bg-orange">화상영어</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_virtual_date" id="current_virtual">
+                                            <label for="current_virtual">
+                                                <span class="checkbox-pin bg-orange">화상영어</span>
+                                            </label>
+                                        </div>
                                         <!-- 화상영어 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_virtual_date">화상영어 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_virtual_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1617,16 +1777,18 @@
                                             </select>
                                         </div>
                                         <!-- 전화영어 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_call_date">
-                                            <span class="checkbox-pin bg-orange">전화영어</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_call_date" id="current_call">
+                                            <label for="current_call">
+                                                <span class="checkbox-pin bg-orange">전화영어</span>
+                                            </label>
+                                        </div>
                                         <!-- 전화영어 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_call_date">전화영어 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_call_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1643,16 +1805,18 @@
                                             </select>
                                         </div>
                                         <!-- 영어앱 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_app_date">
-                                            <span class="checkbox-pin bg-orange">영어앱</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_app_date" id="current_app">
+                                            <label for="current_app">
+                                                <span class="checkbox-pin bg-orange">영어앱</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어앱 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_app_date">영어앱 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_app_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1669,16 +1833,18 @@
                                             </select>
                                         </div>
                                         <!-- 학습지 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_worksheet_date">
-                                            <span class="checkbox-pin bg-orange">학습지</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_worksheet_date" id="current_worksheet">
+                                            <label for="current_worksheet">
+                                                <span class="checkbox-pin bg-orange">학습지</span>
+                                            </label>
+                                        </div>
                                         <!-- 학습지 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_worksheet_date">학습지 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_worksheet_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1695,16 +1861,18 @@
                                             </select>
                                         </div>
                                         <!-- 인강 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_internet_class_date">
-                                            <span class="checkbox-pin bg-orange">인강</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_internet_class_date" id="current_internet_class">
+                                            <label for="current_internet_class">
+                                                <span class="checkbox-pin bg-orange">인강</span>
+                                            </label>
+                                        </div>
                                         <!-- 인강 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_internet_class_date">인강 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_internet_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1721,17 +1889,19 @@
                                             </select>
                                         </div>
                                         <!-- 영어 원서 구독 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_original_date">
-                                            <span class="checkbox-pin bg-orange">영어 원서 구독</span>
-                                            <span class="checkbox-info"> - 아이가 다양한 영어책을 읽고 앱으로도 학습한다면 여깁니다, 학부모님!</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_original_date" id="current_original">
+                                            <label for="current_original">
+                                                <span class="checkbox-pin bg-orange">영어 원서 구독</span>
+                                                <span class="checkbox-info"> - 아이가 다양한 영어책을 읽고 앱으로도 학습한다면 여깁니다, 학부모님!</span>
+                                            </label>
+                                        </div>
                                         <!-- 영어 원서 구독 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_original_date">영어 원서 구독 교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_original_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1751,28 +1921,32 @@
                                 </div>
                                 <!-- 개인 환경 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" class="form-checkbox" name="current_eng_category">
-                                    <span class="checkbox-pin bg-skyblue">개인 환경</span>
+                                    <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_personal">
+                                    <label for="current_personal">
+                                        <span class="checkbox-pin bg-pink">개인 환경</span>
+                                    </label>
                                     <span class="checkbox-info">(해외 거주, 가정교육 등)</span>
                                 </label>
                                 <!-- 개인환경 선택 시 : 개인환경 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
-                                    <div class="label-wrap">
+                                    <!-- <div class="label-wrap">
                                         <i class="arrow-right"></i>
                                         <label class="form-label">개인환경에서의 영어 학습 방식</label>
-                                    </div>
+                                    </div> -->
                                     <div class="form-list-wrap">
                                         <!-- 해외 거주 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_overseas_date">
-                                            <span class="checkbox-pin bg-orange">해외 거주</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_overseas_date" id="current_overseas">
+                                            <label for="current_overseas">
+                                                <span class="checkbox-pin bg-orange">해외 거주</span>
+                                            </label>
+                                        </div>
                                         <!-- 해외 거주 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_overseas_date">해외 거주 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_overseas_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1790,17 +1964,19 @@
                                             <input type="text" id="current_overseas_country" class="form-input" placeholder="거주한 국가">
                                         </div>
                                         <!-- 가정교육 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_home_class_date">
-                                            <span class="checkbox-pin bg-orange">가정교육</span>
-                                            <span class="checkbox-info"> - 엄마(아빠)표, 유튜브 시청 등 가정에서 잘하는 아이들은 여기를 클릭해 주세요!</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_home_class_date" id="current_home_class">
+                                            <label for="current_home_class">
+                                                <span class="checkbox-pin bg-orange">가정교육</span>
+                                                <span class="checkbox-info"> - 엄마(아빠)표 등 가정에서 잘하는 아이들은 여기를 클릭해 주세요!</span>
+                                            </label>
+                                        </div>
                                         <!-- 가정교육 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_home_class_date">가정교육 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_home_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1817,17 +1993,19 @@
                                             </select>
                                         </div>
                                         <!-- 멀티미디어 노출 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_home_class_date">
-                                            <span class="checkbox-pin bg-orange">멀티미디어 노출</span>
-                                            <span class="checkbox-info"> - 유튜브, 영상교재 등</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_media_date" id="current_media">
+                                            <label for="current_media">
+                                                <span class="checkbox-pin bg-orange">멀티미디어 노출</span>
+                                                <span class="checkbox-info"> - 유튜브, 영상교재 등</span>
+                                            </label>
+                                        </div>
                                         <!-- 멀티미디어 노출 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_home_class_date">멀티미디어 노출 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_home_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1844,16 +2022,18 @@
                                             </select>
                                         </div>
                                         <!-- 책읽기 -->
-                                        <label class="form-checkbox-label">
-                                            <input type="checkbox" name="current_eng_learning" class="form-checkbox" value="current_home_class_date">
-                                            <span class="checkbox-pin bg-orange">책읽기</span>
-                                        </label>
+                                        <div class="form-checkbox-label">
+                                            <input type="checkbox" name="past_eng_learning" class="form-checkbox form-sub-checkbox" value="current_book_date" id="current_book">
+                                            <label for="current_book">
+                                                <span class="checkbox-pin bg-orange">책읽기</span>
+                                            </label>
+                                        </div>
                                         <!-- 책읽기 선택 시 : 기간 선택 -->
                                         <div class="input-sub-wrap" style="display: none;">
-                                            <div class="label-wrap">
+                                            <!-- <div class="label-wrap">
                                                 <i class="arrow-right"></i>
                                                 <label class="form-label" for="current_home_class_date">책읽기 기간</label>
-                                            </div>
+                                            </div> -->
                                             <select class="form-input form-select" id="current_home_class_date">
                                                 <option value="1년 미만">1년 미만</option>
                                                 <option value="1년 ~ 1년 6개월">1년 ~ 1년 6개월</option>
@@ -1873,16 +2053,20 @@
                                 </div>
                                 <!-- 기타 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" name="current_eng_category" class="form-checkbox">
-                                    <span class="checkbox-pin bg-skyblue">기타</span>
+                                    <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_etc_category">
+                                    <label for="current_etc_category">
+                                        <span class="checkbox-pin bg-pink">기타</span>
+                                    </label>
                                 </label>
                                 <div class="input-sub-wrap" style="display: none; padding-bottom: 16px">
                                     <input type="text" id="current_etc" class="form-input" placeholder="학습 방식과 기간을 말씀해 주세요.">
                                 </div>
                                 <!-- 없음 -->
                                 <label class="form-checkbox-label">
-                                    <input type="checkbox" id="current_none_option" class="form-checkbox">
-                                    <span class="checkbox-pin bg-skyblue">없음</span>
+                                    <input type="checkbox" class="form-checkbox" id="current_none_option">
+                                    <label for="current_none_option">
+                                        <span class="checkbox-pin bg-pink">없음</span>
+                                    </label>
                                 </label>
                             </div>
                         </div>
@@ -1897,7 +2081,7 @@
                         <!-- 아이의 출생 연도 -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="eng_level"><span class="q-count">(11/16)</span> 아이의 영어 말하기 수준</label>
+                                <label class="form-label" for="eng_level">아이의 영어 말하기 수준 <span class="q-count">(11/16)</span></label>
                             </div>
                             <select id="eng_level" class="form-input form-select">
                                 <option value="1. 알파벳과 친숙하다.">1. 알파벳과 친숙하다.</option>
@@ -1911,7 +2095,7 @@
                         <!-- 플랭귀지에게 코멘트 -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="pl_help"><span class="q-count">(12/16)</span> 플랭귀지의 어떤 부분이 아이의 영어 교육에 도움이 될 거라고 생각하세요?</label>
+                                <label class="form-label" for="pl_help">플랭귀지의 어떤 부분이 아이의 영어 교육에 도움이 될 거라고 생각하세요? <span class="q-count">(12/16)</span></label>
                             </div>
                             <textarea id="pl_help" class="form-input form-textarea" placeholder="답변을 작성해 주세요"></textarea>
                         </div>
@@ -1926,7 +2110,7 @@
                         <!-- 게임을 해 본 적이 있나요? -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="game_have"><span class="q-count">(13/16)</span> 게임을 해 본 적이 있나요?</label>
+                                <label class="form-label" for="game_have">게임을 해 본 적이 있나요? <span class="q-count">(13/16)</span></label>
                             </div>
                             <label class="form-radio pb-8">
                                 <input type="radio" value="Y" name="game_have" id="game_have">
@@ -1944,47 +2128,63 @@
                         <!-- 어떤 게임을 해 본 적이 있나요? -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="game_type"><span class="q-count">(14/16)</span> 어떤 게임을 해 본 적이 있나요?</label>
+                                <label class="form-label" for="game_type">어떤 게임을 해 본 적이 있나요? <span class="q-count">(14/16)</span></label>
                                 <p class="label-caption">다수 선택 가능</p>
                             </div>
                             <label class="form-checkbox-label">
-                                <input type="checkbox" id="game_type" name="game_type" class="form-checkbox">
-                                <span class="checkbox-pin bg-skyblue">마인크래프트</span>
+                                <input type="checkbox" class="form-checkbox" name="game_type" id="game_type_01">
+                                <label for="game_type_01">
+                                    <span class="checkbox-pin bg-pink">마인크래프트</span>
+                                </label>
                             </label>
                             <label class="form-checkbox-label">
-                                <input type="checkbox" id="game_type" name="game_type" class="form-checkbox">
-                                <span class="checkbox-pin bg-skyblue">로블록스</span>
+                                <input type="checkbox" class="form-checkbox" name="game_type" id="game_type_02">
+                                <label for="game_type_02">
+                                    <span class="checkbox-pin bg-pink">로블록스</span>
+                                </label>
                             </label>
                             <label class="form-checkbox-label">
-                                <input type="checkbox" id="game_type" name="game_type" class="form-checkbox">
-                                <span class="checkbox-pin bg-skyblue">기타 게임</span>
+                                <input type="checkbox" class="form-checkbox" name="game_type" id="game_type_03">
+                                <label for="game_type_03">
+                                    <span class="checkbox-pin bg-pink">기타 게임</span>
+                                </label>
                             </label>
                         </div>
                         <!-- 어떤 디바이스로 하나요? -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="game_device"><span class="q-count">(15/16)</span> 어떤 디바이스로 하나요?</label>
+                                <label class="form-label" for="game_device">어떤 디바이스로 하나요? <span class="q-count">(15/16)</span></label>
                                 <p class="label-caption">다수 선택 가능</p>
                             </div>
                             <label class="form-checkbox-label">
-                                <input type="checkbox" id="game_device" name="game_device" class="form-checkbox">
-                                <span class="checkbox-pin bg-skyblue">PC (데스크탑, 노트북)</span>
+                                <input type="checkbox" class="form-checkbox" name="game_device" id="game_device_01">
+                                <label for="game_device_01">
+                                    <span class="checkbox-pin bg-orange">PC (데스크탑, 노트북)</span>
+                                </label>
                             </label>
                             <label class="form-checkbox-label">
-                                <input type="checkbox" id="game_device" name="game_device" class="form-checkbox">
-                                <span class="checkbox-pin bg-skyblue">Mobile</span>
+                                <input type="checkbox" class="form-checkbox" name="game_device" id="game_device_02">
+                                <label for="game_device_02">
+                                    <span class="checkbox-pin bg-orange">Mobile</span>
+                                </label>
                             </label>
                             <label class="form-checkbox-label">
-                                <input type="checkbox" id="game_device" name="game_device" class="form-checkbox">
-                                <span class="checkbox-pin bg-skyblue">Pad</span>
+                                <input type="checkbox" class="form-checkbox" name="game_device" id="game_device_03">
+                                <label for="game_device_03">
+                                    <span class="checkbox-pin bg-orange">Pad</span>
+                                </label>
                             </label>
                             <label class="form-checkbox-label">
-                                <input type="checkbox" id="game_device" name="game_device" class="form-checkbox">
-                                <span class="checkbox-pin bg-skyblue">콘솔 (플레이스테이션, X-Box 등)</span>
+                                <input type="checkbox" class="form-checkbox" name="game_device" id="game_device_04">
+                                <label for="game_device_04">
+                                    <span class="checkbox-pin bg-orange">콘솔 (플레이스테이션, X-Box 등)</span>
+                                </label>
                             </label>
                             <label class="form-checkbox-label">
-                                <input type="checkbox" id="game_device" name="game_device" class="form-checkbox">
-                                <span class="checkbox-pin bg-skyblue">기타</span>
+                                <input type="checkbox" class="form-checkbox" name="game_device" id="game_device_05">
+                                <label for="game_device_05">
+                                    <span class="checkbox-pin bg-orange">기타</span>
+                                </label>
                             </label>
                         </div>
                     </div>
@@ -1998,7 +2198,7 @@
                         <!-- 게임을 해 본 적이 있나요? -->
                         <div class="input-wrap">
                             <div class="label-wrap">
-                                <label class="form-label" for="pler_comment"><span class="q-count">(16/16)</span> 우리 아이에 대해 특별히 해 주실 말씀이 있으시다면 어떤 것이든 말씀해 주세요.</label>
+                                <label class="form-label" for="pler_comment">우리 아이에 대해 특별히 해 주실 말씀이 있으시다면 어떤 것이든 말씀해 주세요. <span class="q-count">(16/16)</span></label>
                                 <p class="label-caption"></p>
                             </div>
                             <textarea id="pler_comment" class="form-input form-textarea" placeholder="(ex. 아이가 1년 후 해외로 나갈 계획이에요.)"></textarea>

@@ -107,8 +107,8 @@ ul {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 20px;
-  margin-block: 12px;
+  /* margin-left: 20px; */
+  margin-bottom: 12px;
 }
 
 .form-input {
@@ -118,6 +118,10 @@ ul {
   border: 1px solid #8E8E8E;
   font-size: 16px;
   box-sizing: border-box;
+}
+
+#past_etc, #current_etc {
+  margin-left: 16px;
 }
 
 .form-input:focus {
@@ -173,12 +177,32 @@ ul {
 /* select */
 .input-sub-wrap .form-select {
   margin-bottom: 20px;
-  margin-left: 16px;
+  margin-left: 28px;
 }
 
 /* radio */
 .form-radio {
   font-size: 17px;
+}
+
+.form-radio span {
+  margin-left: 4px;
+}
+
+[type="radio"] {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  /* transition: border 0.5s ease-in-out; */
+  box-shadow: 0 0 0 2px #c5c5c5;
+  margin: 0;
+}
+
+[type="radio"]:checked {
+  background-color: #4eff9b;
+  border: 3px solid #F8F8F8;
+  box-shadow: 0 0 0 2px #4eff9b;
 }
 
 /* button */
@@ -204,9 +228,87 @@ ul {
 }
 
 /* checkbox */
+.form-checkbox {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.form-checkbox {
+  display: none;
+}
+
+.form-checkbox + label {
+  cursor: pointer;
+}
+
+.form-checkbox.form-sub-checkbox {
+  display: none;
+}
+
+.form-checkbox.form-sub-checkbox + label {
+  cursor: pointer;
+}
+
+.form-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #c5c5c5;
+  background-image: url('check_gray.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 18px;
+  border-radius: 6px;
+  vertical-align: middle;
+}
+
+.form-checkbox:checked + label::before {
+  content: "";
+  background-color: #4eff9b;
+  background-image: url('check_white.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 18px;
+  border: 2px solid #4eff9b;
+}
+
+.form-checkbox.form-sub-checkbox + label > span {
+  vertical-align: middle;
+  margin-left: 2px;
+}
+
+.form-checkbox.form-sub-checkbox + label::before {
+  content: "";
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  border: 2px solid #c5c5c5;
+  background-image: url('check_gray.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 18px;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.form-checkbox.form-sub-checkbox:checked + label::before {
+  content: "";
+  background-color: #4eff9b;
+  background-image: url('check_white.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 18px;
+  border: 2px solid #4eff9b;
+}
+
 .form-checkbox-label {
   font-size: 18px;
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
 }
 
 .input-sub-wrap .form-list-wrap {
@@ -221,10 +323,12 @@ ul {
 .checkbox-pin {
   padding: 2px 8px;
   border-radius: 10px;
+  margin-left: 2px;
 }
 
 .checkbox-info {
   font-size: 14px;
+  margin-left: 4px;
 }
 
 .checkbox-item-area {
@@ -274,6 +378,10 @@ ul {
 
 .bg-mint {
   background-color: #a7ffcd;
+}
+
+.bg-deepblue {
+  background: #c7cdff;
 }
 
 .bg-pink {
@@ -340,6 +448,9 @@ ul {
     font-size: 13px;
     width: 100%;
   }
+  #past_etc, #current_etc {
+    width: 80%;
+  }
   .form-radio {
     font-size: 14px;
     display: flex;
@@ -349,11 +460,12 @@ ul {
     padding: 0;
   }
   .input-sub-wrap {
-    margin-left: 4px;
-    margin-block: 6px;
+    margin-left: 8px;
+    margin-bottom: 0;
   }
   input[type="radio" i] {
-    width: 10px;
+    width: 12px;
+    height: 12px;
     margin: 0;
     margin-right: 6px;
   }
@@ -394,8 +506,8 @@ ul {
     height: 8px;
   }
   .input-sub-wrap .form-select {
-    margin-bottom: 12px;
-    margin-left: 14px;
+    margin-bottom: 0;
+    margin-left: 16px;
     width: 80%;
   }
   .input-sub-wrap .checkbox-info {
@@ -416,5 +528,19 @@ ul {
     margin-left: 14px;
     width: 80%;
     margin-bottom: 12px;
+  }
+  .form-checkbox.form-sub-checkbox + label {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .form-checkbox.form-sub-checkbox + label > span {
+    margin-left: 4px;
+  }
+  .form-list-wrap .form-checkbox-label {
+    margin-bottom: 0;
+  }
+  .form-list-wrap {
+    gap: 16px;
   }
 }
