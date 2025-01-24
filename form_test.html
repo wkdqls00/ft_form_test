@@ -6,6 +6,7 @@
     <title>Airtable Form</title>
     <!-- CSS -->
     <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="reset.css">
     <!-- CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 </head>
@@ -321,9 +322,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_school">
                                     <label class="" for="past_school">
-                                        <span class="checkbox-pin bg-pink">학교</span>
+                                        <span class="checkbox-pin bg-pink">학교 <span class="checkbox-info">(학교 정규 수업, 국제학교 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(학교 정규 수업, 국제학교 등)</span>
                                 </label>
                                 <!-- 학교 선택 시 : 학교 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -478,9 +478,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_academy">
                                     <label for="past_academy">
-                                        <span class="checkbox-pin bg-pink">학원</span>
+                                        <span class="checkbox-pin bg-pink">학원 <span class="checkbox-info">(영어유치원, 영어도서관 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(영어유치원, 영어도서관 등)</span>
                                 </label>
                                 <!-- 학원 선택 시 : 학원 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -719,9 +718,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_face">
                                     <label for="past_face">
-                                        <span class="checkbox-pin bg-pink">대면</span>
+                                        <span class="checkbox-pin bg-pink">대면 <span class="checkbox-info">(원어민 과외, 방문영어 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(원어민 과외, 방문영어 등)</span>
                                 </label>
                                 <!-- 대면 선택 시 : 대면 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -849,9 +847,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_not_face">
                                     <label for="past_not_face">
-                                        <span class="checkbox-pin bg-pink">비대면</span>
+                                        <span class="checkbox-pin bg-pink">비대면 <span class="checkbox-info">(학습지, 영어원서구독 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(학습지, 영어원서구독 등)</span>
                                 </label>
                                 <!-- 비대면 선택 시 : 비대면 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -1035,9 +1032,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="past_eng_category" id="past_personl">
                                     <label for="past_personl">
-                                        <span class="checkbox-pin bg-pink">개인 환경</span>
+                                        <span class="checkbox-pin bg-pink">개인 환경 <span class="checkbox-info">(해외 거주, 가정교육 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(해외 거주, 가정교육 등)</span>
                                 </label>
                                 <!-- 개인환경 선택 시 : 개인환경 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -1209,9 +1205,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_school">
                                     <label class="" for="current_school">
-                                        <span class="checkbox-pin bg-pink">학교</span>
+                                        <span class="checkbox-pin bg-pink">학교 <span class="checkbox-info">(학교 정규 수업, 국제학교 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(학교 정규 수업, 국제학교 등)</span>
                                 </label>
                                 <!-- 학교 선택 시 : 학교 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -1366,9 +1361,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_academy">
                                     <label for="current_academy">
-                                        <span class="checkbox-pin bg-pink">학원</span>
+                                        <span class="checkbox-pin bg-pink">학원 <span class="checkbox-info">(영어유치원, 영어도서관 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(영어유치원, 영어도서관 등)</span>
                                 </label>
                                 <!-- 학원 선택 시 : 학원 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -1609,9 +1603,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_face">
                                     <label for="current_face">
-                                        <span class="checkbox-pin bg-pink">대면</span>
+                                        <span class="checkbox-pin bg-pink">대면 <span class="checkbox-info">(원어민 과외, 방문영어 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(원어민 과외, 방문영어 등)</span>
                                 </label>
                                 <!-- 대면 선택 시 : 대면 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -1739,9 +1732,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_not_face">
                                     <label for="current_not_face">
-                                        <span class="checkbox-pin bg-pink">비대면</span>
+                                        <span class="checkbox-pin bg-pink">비대면 <span class="checkbox-info">(학습지, 영어원서구독 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(학습지, 영어원서구독 등)</span>
                                 </label>
                                 <!-- 비대면 선택 시 : 비대면 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
@@ -1925,9 +1917,8 @@
                                 <label class="form-checkbox-label">
                                     <input type="checkbox" class="form-checkbox" name="current_eng_category" id="current_personal">
                                     <label for="current_personal">
-                                        <span class="checkbox-pin bg-pink">개인 환경</span>
+                                        <span class="checkbox-pin bg-pink">개인 환경 <span class="checkbox-info">(해외 거주, 가정교육 등)</span></span>
                                     </label>
-                                    <span class="checkbox-info">(해외 거주, 가정교육 등)</span>
                                 </label>
                                 <!-- 개인환경 선택 시 : 개인환경 소메뉴 -->
                                 <div class="input-sub-wrap" style="display: none;">
