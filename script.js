@@ -134,3 +134,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+function toggleSubInput() {
+    const gradeSelect = document.getElementById('grade');
+    const subInputWrap = document.getElementById('sub-input-wrap');
+    
+    // "기타" 선택 시만 표시
+    if (gradeSelect.value === "기타") {
+        subInputWrap.style.display = "block";
+    } else {
+        subInputWrap.style.display = "none";
+    }
+}
